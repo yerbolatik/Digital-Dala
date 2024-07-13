@@ -1,0 +1,97 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+    <!--About us-->
+    <div id="authors" class="container5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="author-info">
+                    <img src="https://media.licdn.com/dms/image/D4D22AQF0LpLL0yqQjQ/feedshare-shrink_800/0/1711392176244?e=2147483647&v=beta&t=rJ_afxqFnjZd6P1iw5wKRloOlcKfXY3imke20bhGCyc" alt="Author Photo">
+                    <div class="author-name">
+                        <p>Digital Dala</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="author-details">
+                    <p><strong>Digital Dala деген не?</strong></p>
+                    <p>Біздің мақсатымыз қандай?</p>
+                    <ul>
+                        <li>Қазақша сапалы мақала жазатын авторлардың жұмыстарын біріктіретін платформа жасау;</li>
+                        <li>Сапалы да сауатты жазылатын нөмірі бірінші медиа контент алаңы болу;</li>
+                        <li>Қазақ тілін Tech әлемінде жаңа деңгейге көтеру;</li>
+                        <li>Кітаптарды/мақалаларды қазақ тіліне түсінікті етіп аудару;</li>
+                        <li>Ауылдағы балаларға IT туралы қолжетімді ақпарат дайындау;</li>
+                        <li>Сапалы материал жасау үшін әр саланың мамандарымен коллаб жасау;</li>
+                        <li>IT жайында танымдық анимациялық бейнелер/оқулық жасау;</li>
+                        <li>Митаптармен коллаб жасап, қазақ тілінде сапалы баяндама жасайтын мамандармен бірге жұмыс істеу.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">IT-ді бірге қазақша сөйлетейік!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About us end-->
+
+
+    <!--Posts-->
+    <div id="posts" class="container">
+        <h1>Посттар</h1>
+        <div class="category-buttons">
+            <button class="btn btn-outline-dark" onclick="filterPosts('all')">Барлығы</button>
+            {% for category in categories %}
+                <button class="btn btn-outline-dark" onclick="filterPosts('{{ category.name }}')">{{ category.name }}</button>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for post in posts %}
+                <div class="col-md-3 post-item" data-category="{% for category in post.category.all %}{{ category.name }} {% endfor %}">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{ post.title }}</p>
+                            <p class="card-text">
+                                {% for category in post.category.all %}
+                                    {{ category.name }}
+                                {% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                            </p>
+                            <a href="{% url 'core:post' post.slug %}" class="btn btn-outline-dark btn-sm">Көбірек біліңіз</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col">
+                    <p>No posts available</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!--Posts end-->
+    
+    
+    <!--News-->
+    <div id="news" class="container2">
+        <h1>Жаңалықтар</h1>
+        <div class="row">
+            {% for n in news %}
+                <div class="col-12">
+                    <div class="news-item">
+                        <img src="{{ n.image.url }}" alt="{{ n.title }}" class="news-image">
+                        <div class="news-content">
+                            <div class="news-title">{{ n.title }}</div>
+                            <a href="{% url 'core:news_detail' n.slug %}" class="btn btn-outline-dark btn-sm1 news-button">Көбірек біліңіз</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col-12">
+                    <p>No news available</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!--News end-->
+
+{% endblock content %}
+

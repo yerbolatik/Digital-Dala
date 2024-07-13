@@ -1,0 +1,97 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Менің профилім</h1>
+
+        <!-- Профиль пользователя -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <img src="{{ profile.image.url }}" alt="Profile Image" class="img-fluid rounded-circle">
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="location.href='{% url 'userauths:edit_profile' %}'">
+                        <i class="fa-regular fa-pen-to-square"></i> Профильді өзгерту
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>{{ profile.full_name }}</h2>
+                <p><strong>Username:</strong> {{ user.username }}</p>
+                <p><strong>Bio:</strong> {{ profile.bio }}</p>
+                <p><strong>About:</strong> {{ profile.about }}</p>
+                <p><strong>From:</strong> {{ profile.country }}, {{ profile.city }}</p>
+                <p><strong>Working at:</strong> {{ profile.working_at }}</p>
+                <p><button class="icon-button" onclick="window.open('https://instagram.com/{{ profile.instagram }}', '_blank')">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </button>
+
+                    <button class="icon-button" onclick="window.open('https://wa.me/{{ profile.whatsapp }}', '_blank')">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                    </button>
+                
+                    <button class="icon-button" onclick="window.open('https://t.me/{{ profile.telegram }}', '_blank')">
+                        <i class="fa-brands fa-telegram fa-2x"></i>
+                    </button>
+                </p>
+                
+            </div>
+        </div>
+
+        <!-- Список постов -->
+        <div id="posts" class="container">
+            <h1>Посттар</h1>
+            
+            <div class="row">
+                {% for post in posts %}
+                    <div class="col-md-3 post-item" data-category="{% for category in post.category.all %}{{ category.name }} {% endfor %}">
+                        <div class="card">
+                            <img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">{{ post.title }}</p>
+                                <p class="card-text">
+                                    {% for category in post.category.all %}
+                                        {{ category.name }}
+                                    {% if not forloop.last %}, {% endif %}
+                                    {% endfor %}
+                                </p>
+                                <a href="{% url 'core:post' post.slug %}" class="btn btn-outline-dark btn-sm">Толығырақ</a>
+                            </div>
+                        </div>
+                    </div>
+                {% empty %}
+                    <div class="col">
+                        <p>No posts available</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Список подписчиков -->
+        <div class="mb-4">
+            <h2>Жазылушылары</h2>
+            <ul class="list-group">
+                {% for follower in followers %}
+                    <li class="list-group-item">
+                        <a href="{% url 'userauths:author_detail' follower.username %}">{{ follower.username }}</a>
+                    </li>
+                {% empty %}
+                    <li class="list-group-item">Жазылушылары жоқ</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Список тех, на кого подписан пользователь -->
+        <div class="mb-4">
+            <h2>Кімге жазылған</h2>
+            <ul class="list-group">
+                {% for following in followings %}
+                    <li class="list-group-item">
+                        <a href="{% url 'userauths:author_detail' following.username %}">{{ following.username }}</a>
+                    </li>
+                {% empty %}
+                    <li class="list-group-item">Әлі ешкімге жазылмаған</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock content %}

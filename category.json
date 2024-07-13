@@ -1,0 +1,37 @@
+[
+    {
+        "model": "core.category",
+        "pk": 8,
+        "fields": {
+            "name": "Opportunities"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 9,
+        "fields": {
+            "name": "Analysis"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 10,
+        "fields": {
+            "name": "Management"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 11,
+        "fields": {
+            "name": "Startup"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 12,
+        "fields": {
+            "name": "qara"
+        }
+    }
+]

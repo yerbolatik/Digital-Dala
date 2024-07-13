@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+    <!--Posts-->
+    <div id="posts" class="container">
+        <h1>Авторлар</h1>
+        <div class="row">
+            {% for author in authors %}
+                <div class="col-md-3 post-item">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ author.profile.image.url }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{ author.name }}</p>
+                            <a href="{% url 'userauths:author_detail' author.username %}" class="btn btn-outline-dark btn-sm">Көбірек біліңіз</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col">
+                    <p>No posts available</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!--Posts end-->
+
+{% endblock content %}
+

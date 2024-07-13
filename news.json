@@ -1,0 +1,52 @@
+[
+    {
+        "model": "core.news",
+        "pk": 2,
+        "fields": {
+            "created_at": "2024-06-30 11:01:57.372805",
+            "description": "Өзгерістер\r\n\r\nСәлем, достар!\r\n\r\nБіз белгілі бір себептерге байланысты митаптың өткізілетін орнының өзгергендігін хабарлаймыз.\r\n\r\nЖаңа өтілетін орын: Абай көшесі 8а, UIB университеті, 113 аудитория\r\n\r\nУақыты өзгеріссіз қалады.\r\n\r\nБарлықтарыңызды асыға күтеміз!",
+            "image": "news_images/2024-06-30_16-01-30.png",
+            "title": "‼️Өзгерістер‼️"
+        }
+    },
+    {
+        "model": "core.news",
+        "pk": 3,
+        "fields": {
+            "created_at": "2024-06-30 11:09:40.483662",
+            "description": "Cәлем, достар!\r\n\r\nҚазақ тілді митаптар желісі жалғасуда.\r\n\r\nБұл жолы митапта - «Жасанды интеллект және машинаны үйрету” әлемімен танысамыз\r\n\r\n22 маусым сағат 13:00-де AlmaU университетінде сіздерді күтеміз.\r\n\r\nЖасанды интеллект және машинаны үйрету саласында жұмыс істейтін білікті мамандармен таныса отырыңыздар!\r\n\r\nСпикерлер:\r\n\r\nЖАРМАҒАМБЕТОВ АРМАН\r\n\r\nAI Researcher, Meta AI (FAIR)\r\n\r\n“LLM модельдерінің қауіпсіздігі мен сенімділігі”\r\n\r\nЖАРҚЫНБЕК ТЕМІРЛАН\r\n\r\nML Engineer, Dereknet AI\r\n\r\n“Металлургия саласындағы ML проектер”\r\n\r\nИКРАМ ҒАЙНИ\r\n\r\nData Scientist, Tele2\r\n\r\n“ML алгоритмдерін үйрету үшін жасанды деректерді құру”\r\n\r\nАМРИН АЙДАР\r\n\r\nML Engineer, Cerebra\r\n\r\n“Medtech саласындағы Machine learning”\r\n\r\nТОҚТАҒАНОВ ӘДІЛХАН\r\n\r\nLead Product Analyst, Aviata (ex. Tinkoff, VK, MTC)\r\n\r\n“AutoML: Уақытты үнемдеңіз, өнімділікті арттырыңыз!”\r\n\r\nКездесу модераторы:\r\n\r\nБекзат Тұраров\r\n\r\nData Analyst, Freedom Finance\r\n22.06.2024 13:00 - 17:00\r\n\r\nРозыбакиев көшесі 227, AlmaU, aудитория А600\r\n\r\n\r\nТіркелу сілтемесі: https://forms.gle/8fpPoyeRc4i49nvL6\r\n\r\nБіз @digitaldala -мен біріге отырып сіздерді осы кездесуімізге шақырамыз\r\n\r\nIT-ді бірге қазақша сөйлетейік!\r\n\r\n@qazaqtech",
+            "image": "news_images/9ad1a6c1-7ff6-4edc-a.jpeg",
+            "title": "Qazaq Tech MeetUp Machine Learning"
+        }
+    },
+    {
+        "model": "core.news",
+        "pk": 4,
+        "fields": {
+            "created_at": "2024-06-30 11:39:47.804885",
+            "description": "Сәлем, әлем! Байланыста Digital Dala!\r\nhttps://www.youtube.com/watch?v=EWEJfYpCmEo\r\n\r\nDigital Dala - қазақ тіліндегі IT және Технология әлемі жайлы медиа алаңы.\r\n\r\nGrowth hacking жайлы бұрын соңды естіп пе едіңіз? Ол стандартты емес, оңай шешімдер мен тәсілдер арқылы компанияны немесе стартапты кеңейтуді және жылжытуды қамтитын маркетингтегі тұжырымдама. Ендеше бұл подкастта Ғинаятова Софияның шетелдегі Growth hacker ретіндегі тәжірибесі туралы сөз қозғадық. Қазақ жастарының шетелді бағындыруы, мүмкіндіктерді қолдануы, мультипотенциал адамдар тақырыбы сізді қызықтырса, онда Софиямен подкаст сізге арналады.\r\n\r\nТүсірілім қонағы:\r\n\r\nСофия Ғинаятова - Сингапур компаниясында Growth Hacker, Сауд Арабиясының проектінде Project Manager;\r\nLinkedIn:\r\n\r\n\r\nПодкаст жүргізушісі:\r\n\r\nРимма Төлеуғали – СДУ 4-курс студенті , 1Fit компаниясының маркетинг аналитигі.\r\nБізді басқа әлеуметтік желілерді оқи жүріңіздер!\r\n\r\nТелеграм: https://t.me/digitaldala\r\nИнстаграм: @digitaldala\r\nТикток: https://www.tiktok.com/@digital_dala?..",
+            "image": "news_images/2024-06-30_16-38-47_4M93nim.png",
+            "title": "Growth hacking жайлы бұрын соңды естіп пе едіңіз?"
+        }
+    },
+    {
+        "model": "core.news",
+        "pk": 5,
+        "fields": {
+            "created_at": "2024-06-30 11:41:25.758696",
+            "description": "Digital Dala ютуб каналында алғашқы подкаст жарыққа шықты! Каналымызға тіркеліп, пікір, қолдау не критика қалдырып кетіңіздер!\r\n\r\nСілтеме: https://www.youtube.com/watch?v=-u4ohrIGkZ4\r\n\r\nПодкаст тақырыбы MAANG-қа апарар жол жайлы болмақ. 2023 жылғы статистика бойынша әлемге әйгілі Google компаниясында 100-ге жуық қазақстандық жұмыс жасайды.\r\n\r\nБұл подкастта Кербез Оразғалиеваның осы жолдағы тәжірибесімен және бағдарламаушыларға кеңестерімен бөлісетін боламыз.\r\n\r\nТүсірілім қонағы:\r\n\r\nКербез Оразғалиева - ex-Google Software Engineer\r\n\r\nLinkedIn: https://www.linkedin.com/in/kerbez-orazgaliyeva-5a2953176/;\r\n\r\nПодкаст жүргізушісі:\r\n\r\nАлина Ачилова - Professor of Practice AlmaU, Lector SDU, GDG мүшесі, Startup Business Expert;",
+            "image": "news_images/2024-06-30_16-40-58.png",
+            "title": "Google-ға апарар жол"
+        }
+    },
+    {
+        "model": "core.news",
+        "pk": 6,
+        "fields": {
+            "created_at": "2024-06-30 11:42:01.437470",
+            "description": "Cәлем, достар\r\nҚалдарыңыз қалай?!\r\nСіздерге жақсы жаңалықтармен оралдық\r\nМұқият талқылаудан кейін біз IT-дің әртүрлі салалары бойынша митап ұйымдастыруға шешім қабылдадық. Міне, келесі кезекте - Аналитиканың қызықты әлеміне арналған митап\r\n\r\nСіздерді 18 мамыр сағат 13:00-де AlmaU университетінде асыға күтеміз.\r\nАналитика саласында жұмыс істейтін білікті спикерлерімен таныса отырыңыздар!\r\n\r\nСпикерлер:\r\n\r\nТЕМІРБЕК ИСЛАМБЕК\r\n\r\nSENIOR DATA ANALYST, QIC (ex. Kolesa Group)\r\n\r\n“ML-дің көмегімен болашақ трендтерді қалай болжауға болады?”\r\n\r\nМУКАШЕВА ДАМИРА\r\n\r\nPRODUCT ANALYST, Easytap\r\n\r\n“Инвесторлар үшін маңызды метрикалар”\r\n\r\nКӘРІМ ӘДІЛЕТ\r\n\r\nSENIOR DATA ANALYST, Kazakhtelecom\r\n\r\n“Телекомда клиенттерді сегментациялау ерекшеліктері”\r\n\r\nМАРАТОВА АЛТЫНАЙ\r\n\r\nSYSTEM ANALYST, FreedomPay (ex. Bank CenterCredit)\r\n\r\n“System Analyst: IT және бизнес арасындағы адам-аудармашы”\r\n\r\nКАНИЕВА НАРГИЗ\r\n\r\nADVISER Data&Analytics, PwC Kazakhstan\r\n\r\n“Azure Stream Analytics арқылы деректерді өңдеу желісін оптимизациялау”\r\n\r\nТОҚТАҒАНОВ ӘДІЛХАН\r\n\r\nLEAD PRODUCT ANALYST, Aviata (ex. Tinkoff, VK, MTC)\r\n\r\n“Деректерді талдаудағы тосынсыйлар”\r\n\r\nАЧИЛОВА АЛИНА\r\n\r\nSenior Professor of Practice & IT Startup Mentor at AlmaU, Google Developer Expert Organizer (ex. Senior Business/System Analyst at Air Astana)\r\n\r\n“Аналитик бесаспап маман: мамандықтың қырлары мен сырлары”\r\n\r\nКездесу модераторы:\r\n\r\nДосмұхамед Али\r\n\r\nAnalyst, Freedom Bank\r\n\r\n(New Delta Research, BI Group)\r\n\r\n18.05.2024 13:00 - 17:00\r\n\r\nРозыбакиев көшесі 227, AlmaU, aудитория А600\r\n\r\nТіркелу сілтемесі: https://forms.gle/kpWVDWErAwbLwHpo7",
+            "image": "news_images/9e4546ae-9fc9-474e-8.jpeg",
+            "title": "Qazaq Tech MeetUp"
+        }
+    }
+]
